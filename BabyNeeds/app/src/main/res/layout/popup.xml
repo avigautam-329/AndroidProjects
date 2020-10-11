@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_id"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/card_title"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:id="@+id/title_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:layout_below="@+id/title_card"
+                android:id="@+id/babyItem"
+                android:inputType="text"
+                android:hint="@string/input_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no" />
+            <EditText
+                android:layout_below="@+id/babyItem"
+                android:id="@+id/itemQuantity"
+                android:inputType="number"
+                android:hint="@string/input_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/itemColor"
+                android:layout_below="@+id/itemQuantity"
+                android:hint="@string/input_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/itemSize"
+                android:inputType="number"
+                android:layout_below="@+id/itemColor"
+                android:hint="@string/input_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/save_button"
+                android:layout_below="@id/itemSize"
+                android:text="@string/save_text"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+</LinearLayout>

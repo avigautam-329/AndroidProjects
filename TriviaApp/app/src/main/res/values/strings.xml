@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TriviaApp</string>
+    <string name="title_text">Trivia</string>
+    <string name="true_text">True</string>
+    <string name="false_text">False</string>
+    <string name="todo">TODO</string>
+    <string name="show_text">Something Here !!</string>
+    <string name="counter_text">0/913</string>
+    <string name="score_text">Current Score : 0</string>
+    <string name="max_score">Max Score : 0</string>
+</resources>
